@@ -1,26 +1,18 @@
+import 'intl'
+import 'intl/locale-data/jsonp/pt-BR'
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Routes from './src/routes'
 
-function App() {
+//<div> <span> <header> significado na web
+//no react native pode voltar usar div pra tudo
+//todos elementos tem display flex por padrao
+//nao ha herança de estilo, cada componente deve conter sua estilização propria
+
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <Routes />
+  )
 }
 
-export default App;
